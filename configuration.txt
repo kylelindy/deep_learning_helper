@@ -27,4 +27,7 @@ tf.keras.backend.set_session(tf.Session(config=config));
 
 ### clean up command???
 rm -rf ~/.nv/
+
+### reference
 https://stackoverflow.com/questions/43147983/could-not-create-cudnn-handle-cudnn-status-internal-error
+https://github.com/tensorflow/tensorflow/issues/24496
