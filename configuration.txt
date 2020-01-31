@@ -14,3 +14,16 @@ ipython kernel install --user --name=DLEnv1
 
 ### start notebook
 jupyter notebook
+
+### watch nvidia status
+watch -n 0.1 nvidia-smi
+
+### added to notebook for gpu
+import tensorflow as tf
+config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
+config.gpu_options.per_process_gpu_memory_fraction = 0.9
+tf.keras.backend.set_session(tf.Session(config=config));
+
+### clean up command???
+rm -rf ~/.nv/
