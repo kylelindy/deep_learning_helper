@@ -1,7 +1,7 @@
 ### install anaconda
 curl https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh -o ~/Downloads/anaconda_install.sh
 chmod +x ~/Downloads/anaconda_install.sh
-bash ~/Downloads/anaconda_install.sh -b -p $HOME/miniconda
+bash ~/Downloads/anaconda_install.sh -b -p ~/anaconda
 
 ### create python environment
 conda create -n DLEnv1
@@ -10,10 +10,10 @@ conda create -n DLEnv1
 conda activate DLEnv1
 
 ### install packages
-conda install nb_conda tensorflow keras matplotlib ipykernel pillow
+conda install nb_conda tensorflow-gpu keras matplotlib ipykernel pillow
 
 ### register env with jupyter kernel
 ipython kernel install --user --name=DLEnv1
 
 ### start notebook
-jupyter notebook
+#jupyter notebook
