@@ -3,6 +3,9 @@ curl https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh -o ~/Do
 chmod +x ~/Downloads/anaconda_install.sh
 bash ~/Downloads/anaconda_install.sh -b -p ~/anaconda
 
+### initialize shell
+$HOME/anaconda/bin/conda init bash
+
 ### create python environment
 conda create -n DLEnv1
 
